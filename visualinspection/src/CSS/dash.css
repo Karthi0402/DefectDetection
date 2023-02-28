@@ -1,0 +1,79 @@
+.PHOTO {
+    height: 30px;
+    padding-top: 1em;
+    padding-left: 2em;
+    text-align: left;
+  }
+.Icon1{
+    float: right;
+    margin: 0.5em 2.8em 0 0;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+span{
+    float: right;
+    color: black;
+    margin-right: 2.5em;
+    margin-left: 90%;
+    margin-bottom: 1em;
+}
+table{
+    width: 95%;
+    margin: 0 2em 0 2em;
+    background-color: chocolate; 
+    border: 1px solid chocolate;
+    border-radius: 10px; 
+}
+tr h3{
+    text-align: left;
+    color: white;
+    margin-left: 2em;
+}
+tr button{
+    float: right;
+    margin-right: 2em;
+    height: 3em;
+    cursor: pointer;
+    color: white;
+    background-color: chocolate;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+tr button:hover{
+    background-color: white;
+    color: black;
+}
+.ttable{
+    background-color: white;
+}
+.GRID{
+    margin-top: 2em;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.TopLeft{
+    margin-left: 2em;
+    background-color: gainsboro;
+    border: 10px solid chocolate;
+    border-radius: 10px;
+}
+.TopRight{
+    margin-right: 2em;
+    background-color: gainsboro;
+    border: 10px solid chocolate;
+    border-radius: 10px;
+}
+.BottomLeft{
+    margin-left: 2em;
+    background-color: gainsboro;
+    border: 10px solid chocolate;
+    border-radius: 10px;
+}
+.BottomRight{
+    margin-right: 2em;
+    background-color: gainsboro;
+    border: 10px solid chocolate;
+    border-radius: 10px;
+}
