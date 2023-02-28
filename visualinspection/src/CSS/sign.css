@@ -1,0 +1,76 @@
+.PHOTO {
+    height: 30px;
+    padding-top: 1em;
+    padding-left: 2em;
+    text-align: left;
+  }
+  .Icon {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .Button {
+    float: right;
+    background-color: coral;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #INPUT {
+    float: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    color: darkgray;
+    border: none;
+  }
+  
+  .container {
+    width: 300px;
+    border: solid 1px white;
+    border-radius: 5px;
+    margin-top: 3em;
+    margin-left: 30em;
+    margin-right: 50em;
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 4em;
+   
+    border: solid 1px white;
+    background-color: lightgray;
+  }
+  .container Link{
+    color: darkgray;
+    text-decoration: none;
+  }
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+ 
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .H2 {
+    text-align: center;
+  }
+  
+  .P {
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+  }

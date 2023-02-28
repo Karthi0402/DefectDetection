@@ -1,9 +1,13 @@
 import React from 'react'
-
-const dashboard = () => {
+import logo from './Img/logo.jpeg';
+const Dashboard = () => {
   return (
-    <div>dashboard</div>
+    <div>
+        <div className='NavBar'>
+        <img className='PHOTO' src={logo} alt="Ari-Logo" />
+        </div>
+    </div>
   )
 }
 
-export default dashboard
+export default Dashboard

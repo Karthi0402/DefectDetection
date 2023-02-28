@@ -1,9 +1,13 @@
 import React from 'react'
-
-const logdetails = () => {
+import logo from './Img/logo.jpeg';
+const Logdetails = () => {
   return (
-    <div>logdetails</div>
+    <div>
+        <div className='NavBar'>
+        <img className='PHOTO' src={logo} alt="Ari-Logo" />
+        </div>
+    </div>
   )
 }
 
-export default logdetails
+export default Logdetails
