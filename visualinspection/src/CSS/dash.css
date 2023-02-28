@@ -43,9 +43,6 @@ tr button:hover{
     background-color: white;
     color: black;
 }
-.ttable{
-    background-color: white;
-}
 .GRID{
     margin-top: 2em;
     display: grid;
