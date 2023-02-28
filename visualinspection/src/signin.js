@@ -4,7 +4,7 @@ const signin = () => {
     <div>
         <div className='NavBar'>
             <h1>
-                hiiii
+                hiiiiz
             </h1>
         </div>
     </div>
