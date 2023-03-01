@@ -44,33 +44,37 @@ tr button:hover{
     color: black;
 }
 .GRID{
-    margin-top: 2em;
+    margin:2em 2em 2em 2em;
     display: grid;
     height: 100vh;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    background-color: chocolate;
+    border: 1px solid chocolate;
+    border-radius: 20px;
+
 }
 .TopLeft{
-    margin-left: 2em;
     background-color: gainsboro;
     border: 10px solid chocolate;
-    border-radius: 10px;
+    border-radius: 20px;
+
 }
 .TopRight{
-    margin-right: 2em;
     background-color: gainsboro;
     border: 10px solid chocolate;
-    border-radius: 10px;
+    border-radius: 20px;
+
 }
 .BottomLeft{
-    margin-left: 2em;
     background-color: gainsboro;
     border: 10px solid chocolate;
-    border-radius: 10px;
+    border-radius: 20px;
+
 }
 .BottomRight{
-    margin-right: 2em;
     background-color: gainsboro;
     border: 10px solid chocolate;
-    border-radius: 10px;
+    border-radius: 20px;
+    
 }

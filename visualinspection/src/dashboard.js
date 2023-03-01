@@ -25,6 +25,7 @@ const Dashboard = () => {
                     </thead>
                 </table>
             </div>
+            
             <div className='GRID'>
                 <div className='TopLeft' >tl</div>
                 <div className='TopRight'>tr</div>

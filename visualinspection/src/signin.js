@@ -5,19 +5,21 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import { useNavigate } from 'react-router-dom';
 const Signin = () => {
+    const navigate = useNavigate();
+    const [error, setError] = useState("")
     const [input, setInput] = useState({
         email: "",
         password: ""
     })
-    const [message, setMessage] = useState("")
     const handleSubmit = (e) => {
         e.preventDefault();
         const regEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-        if ((regEx.test(input.email)) && (input.email && input.password)) {
-            setMessage("Email is Valid");
-        } else if (!regEx.test(input.email) && input.email !== " ") {
-            setMessage("Enter Valid Details");
+        if ((regEx.test(input.email)) && (input.email && input.password) && (input.password.length>=8) && (input.password.length<=15) ) {
+            navigate('/dashboard');
+        } else if( (!regEx.test(input.email) && input.email !== " ") || (input.password === "" )||( input.password.length<8 )||( input.password.length>15)){
+                setError("Invalid Email or Password!!");
         }
     }
     return (
@@ -45,12 +47,13 @@ const Signin = () => {
                             <input id='INPUT' name='password' onChange={(e) =>
                                 setInput({ ...input, [e.target.name]: e.target.value, })} value={input.password} type='password' placeholder='Password' autocomplete='off' />
                         </div>
+                        <br/>
                         <Link>Forget Password?</Link>
-
+                        <br/>
+                        { error && <div style={{color: "red"}}> {error}</div> }
                         <div>
                             <button type='submit' className='Button'>Sign In</button>
-                            <br />
-                            {message}
+                            <br/>
                         </div>
                     </div>
                 </form>

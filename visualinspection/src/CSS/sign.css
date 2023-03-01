@@ -12,23 +12,28 @@
   
   .Button {
     float: right;
-    background-color: coral;
+    background-color: chocolate;
     color: white;
     width: 80px;
     height: 40px;
     border: none;
     border-radius: 5px;
+    cursor:pointer;
   }
-  
+  .Button:hover{
+    background-color: white;
+    color: chocolate;
+  }
   #INPUT {
     float: center;
     height: 50px;
     width: 100%;
     border-radius: 5px;
     background-color: white;
-    color: darkgray;
+    color:black;
     border: none;
   }
+
   
   .container {
     width: 300px;
