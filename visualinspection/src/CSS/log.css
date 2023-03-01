@@ -1,34 +1,31 @@
-table{
-    width: 95%;
-    margin: 0 2em 0 2em;
-    background-color: chocolate; 
+.popup{
+    height: 90vh;
+    width: 90vw;
+    background-color: white;
     border: 1px solid chocolate;
-    border-radius: 10px; 
+    margin: 2em 4em 2em 4em;
 }
-tr h3{
-    text-align: left;
-    color: white;
-    margin-left: 2em;
-}
-tr button{
-    float: right;
-    margin-right: 2em;
-    height: 3em;
-    cursor: pointer;
-    color: white;
+.popup-header{
+    display: flex;
     background-color: chocolate;
-    border: 1px solid white;
-    border-radius: 10px;
+    justify-content: space-between;
+    padding: 0 30px 0 15px;
+    border-bottom: 2px solid white;
 }
-tr button:hover{
-    background-color: white;
-    color: black;
+.popup-header h2{
+    color: white;
 }
-.grid{
-    display: grid;
-    height: 80vh;
-    grid-template-columns: auto;
-    background-color: white;
-    border: 1px solid chocolate;
-    margin: 0 2em 0 2em;
+.popup-header h3{
+    color: white;
+    cursor: pointer;
+}
+.maintable{
+    border: 1px solid black;
+    width: 70vw;
+    height: 5vh;
+    margin: 2em 4em 2em 10em;
+}
+.trow td{
+    color: white;
+    padding-left: 7em;
 }

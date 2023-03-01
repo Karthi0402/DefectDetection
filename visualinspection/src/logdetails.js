@@ -1,27 +1,27 @@
-import React from 'react'
-import logo from './Img/logo.jpeg';
+import React from 'react';
 import './CSS/log.css';
-import { AiOutlineUser } from 'react-icons/ai';
-import { IconContext } from 'react-icons';
+import {useNavigate} from 'react-router-dom';
 const Logdetails = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <div className='NavBar'>
-        <img className='PHOTO' src={logo} alt="Ari-Logo" />
-        <IconContext.Provider value={{ className: "Icon1", size: "2em" }}>
-          <AiOutlineUser />
-        </IconContext.Provider>
-        <span style={{ "color": "black" }}>Profile</span>
-      </div>
       <div>
-        <table>
-          <thead>
-            <tr>
-              <td><h3>Log Details</h3></td>
-              <td><button type='submit'>Close</button></td>
-            </tr>
-          </thead>
-        </table>
+        <div className='popup'>
+          <div className='popup-header'>
+            <h2>Log Details</h2>
+            <h3 onClick={()=>navigate('/dashboard')}> X</h3>
+          </div>
+          <div className='bottom'>
+            <table className='maintable'>
+              <tr className='trow'>
+                <td>Log Entry No.</td>
+                <td>View Video</td>
+                <td>View Logs</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   )

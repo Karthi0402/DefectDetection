@@ -3,7 +3,9 @@ import logo from './Img/logo.jpeg';
 import './CSS/dash.css';
 import { AiOutlineUser } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import { useNavigate } from 'react-router-dom';
 const Dashboard = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <div className='NavBar'>
@@ -18,7 +20,7 @@ const Dashboard = () => {
                     <thead>
                         <tr>
                             <td><h3>Visual Inspection</h3></td>
-                            <td><button type='submit'>Log Details</button></td>
+                            <td><button type='submit' onClick={()=>navigate('/logdetails')}>Log Details</button></td>
                         </tr>
                     </thead>
                 </table>
