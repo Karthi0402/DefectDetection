@@ -4,6 +4,7 @@ import './CSS/dash.css';
 import { AiOutlineUser } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import Logdetails from './logdetails';
+import Webcam from 'react-webcam';
 const Dashboard = () => {
     const [openDetails,setOpenDetails] = useState(false);
     return (
@@ -31,10 +32,10 @@ const Dashboard = () => {
             </div>
             <div className="grid0">
             <div className='GRID'>
-                <div className='TopLeft' >tl</div>
-                <div className='TopRight'>tr</div>
-                <div className='BottomLeft'>bl</div>
-                <div className='BottomRight'>br</div>
+                <div className='TopLeft' ><Webcam/></div>
+                <div className='TopRight'><Webcam/></div>
+                <div className='BottomLeft'><Webcam/></div>
+                <div className='BottomRight'><Webcam/></div>
             </div>
             </div>
         </div>
