@@ -21,13 +21,3 @@
     color: white;
     cursor: pointer;
 }
-.maintable{
-    border: 1px solid black;
-    width: 70vw;
-    height: 5vh;
-    margin: 2em 4em 2em 10em;
-}
-.trow td{
-    color: white;
-    padding-left: 7em;
-}

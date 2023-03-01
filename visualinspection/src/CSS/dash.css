@@ -23,6 +23,7 @@ table{
     background-color: chocolate; 
     border: 1px solid chocolate;
     border-radius: 10px; 
+    overflow: hidden;
 }
 tr h3{
     text-align: left;
@@ -43,6 +44,13 @@ tr button:hover{
     background-color: white;
     color: black;
 }
+.pop-up-container{
+    position: fixed;
+    overflow-y: scroll;
+    overflow: hidden;
+    max-height: 100%;
+    top: 1em;
+}
 .GRID{
     margin:2em 2em 2em 2em;
     display: grid;
@@ -52,6 +60,8 @@ tr button:hover{
     background-color: chocolate;
     border: 1px solid chocolate;
     border-radius: 20px;
+    position: flex;
+    overflow: hidden;
 
 }
 .TopLeft{

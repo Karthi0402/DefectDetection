@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from './Img/logo.jpeg';
 import './CSS/dash.css';
 import { AiOutlineUser } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
-import { useNavigate } from 'react-router-dom';
+import Logdetails from './logdetails';
 const Dashboard = () => {
-    const navigate = useNavigate();
+    const [openDetails,setOpenDetails] = useState(false);
     return (
         <div>
             <div className='NavBar'>
@@ -20,17 +20,22 @@ const Dashboard = () => {
                     <thead>
                         <tr>
                             <td><h3>Visual Inspection</h3></td>
-                            <td><button type='submit' onClick={()=>navigate('/logdetails')}>Log Details</button></td>
+                            <td><button type='submit' onClick={()=>{
+                                setOpenDetails(true);
+                            }}>Log Details</button>
+                            </td>
                         </tr>
                     </thead>
                 </table>
+                {openDetails && <div className='pop-up-container'><Logdetails closeDetails={setOpenDetails}/></div>}
             </div>
-            
+            <div className="grid0">
             <div className='GRID'>
                 <div className='TopLeft' >tl</div>
                 <div className='TopRight'>tr</div>
                 <div className='BottomLeft'>bl</div>
                 <div className='BottomRight'>br</div>
+            </div>
             </div>
         </div>
     )
