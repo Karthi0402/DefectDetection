@@ -8,8 +8,7 @@
     border: 1px solid black;
     text-align: center;
     border-radius: 5px;
-  }
-  
+  } 
   .Button {
     float: right;
     background-color: chocolate;
@@ -33,20 +32,12 @@
     color:black;
     border: none;
   }
-
-  
   .container {
     width: 300px;
     border: solid 1px white;
-    border-radius: 5px;
-    margin-top: 3em;
-    margin-left: 30em;
-    margin-right: 50em;
-    padding-top: 3em;
-    padding-left: 5em;
-    padding-right: 5em;
-    padding-bottom: 4em;
-   
+    border-radius: 5px;   
+    margin: 10em 40em 15em 40em;
+    padding: 6em;
     border: solid 1px white;
     background-color: lightgray;
   }
@@ -78,4 +69,14 @@
   }
   a{
     text-decoration: none;
+  }
+  @media screen and (max-width:1200px) {
+    .container{
+      border: solid 1px white;
+      border-radius: 5px;   
+      margin: 10em 20em 15em 24em;
+      padding: 6em;
+      border: solid 1px white;
+      background-color: lightgray;
+    }
   }

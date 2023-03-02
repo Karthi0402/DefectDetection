@@ -17,7 +17,7 @@ const Dashboard = () => {
                 <span style={{ "color": "black" }}>Profile</span>
             </div>
             <div>
-                <table>
+                <table className='dtable'>
                     <thead>
                         <tr>
                             <td><h3>Visual Inspection</h3></td>
@@ -30,7 +30,7 @@ const Dashboard = () => {
                 </table>
                 {openDetails && <div className='pop-up-container'><Logdetails closeDetails={setOpenDetails}/></div>}
             </div>
-            <div className="grid0">
+            <div>
             <div className='GRID'>
                 <div className='TopLeft' ><Webcam/></div>
                 <div className='TopRight'><Webcam/></div>

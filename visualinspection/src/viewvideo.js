@@ -1,13 +1,13 @@
 import React from 'react'
-
-const ViewVideo = () => {
+import './CSS/video.css';
+const ViewVideo = ({closeVideo}) => {
   return (
     <div>
         <div>
-        <div className='popup'>
-          <div className='popup-header'>
-            <h2>Log Details</h2>
-            <h3> X</h3>
+        <div className='video-popup'>
+          <div className='video-popup-header'>
+            <h2>View video</h2>
+            <h3 onClick={()=>closeVideo(false)}> X</h3>
           </div>
           <div className='bottom'>
             

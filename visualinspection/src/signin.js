@@ -23,7 +23,7 @@ const Signin = () => {
         }
     }
     return (
-        <div>
+        <div className='main-container'>
             <div className='NavBar'>
                 <img className='PHOTO' src={logo} alt="Ari-Logo" />
             </div>
