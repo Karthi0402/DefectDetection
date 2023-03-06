@@ -36,7 +36,7 @@
     width: 300px;
     border: solid 1px white;
     border-radius: 5px;   
-    margin: 10em 40em 15em 40em;
+    margin: 10em 20em 15em 30em;
     padding: 6em;
     border: solid 1px white;
     background-color: lightgray;
@@ -70,7 +70,7 @@
   a{
     text-decoration: none;
   }
-  @media screen and (max-width:1200px) {
+  /* @media screen and (max-width:1200px) {
     .container{
       border: solid 1px white;
       border-radius: 5px;   
@@ -78,5 +78,15 @@
       padding: 6em;
       border: solid 1px white;
       background-color: lightgray;
+    }
+  } */
+  @media screen and (max-width:1320) {
+    .container{
+      border: solid 1px white;
+      border-radius: 5px;   
+      margin-top: 1em;
+      padding: 6em;
+      border: solid 1px white;
+      background-color: blue;
     }
   }

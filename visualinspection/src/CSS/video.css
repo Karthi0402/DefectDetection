@@ -2,8 +2,7 @@
     height: 100vh;
     background-color: white;
     width: 94vw;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
 .video-popup-header{
     display: flex;

@@ -1,5 +1,5 @@
 .popup{
-    height: 100vh;
+    height: 100%;
     background-color: white;
     border: 1px solid chocolate;
     width: 94vw;
@@ -33,8 +33,12 @@ tbody tr{
     height: 2.5em;
     border-bottom: 1px solid black;
 }
-.Icon{
+.iconn{
     cursor: pointer;
+}
+.bicon{
+    
+    cursor:pointer ;
 }
 .video-popup{
     position: fixed;
@@ -42,6 +46,14 @@ tbody tr{
     overflow: hidden;
     max-height: 100%;
     top: 8em;
+}
+.viewlog-popup{
+    position:fixed;
+    overflow-y: scroll;
+    overflow: hidden;
+    max-height: 100%;
+    top: 8em;
+    margin-left: 3em;
 }
 @media screen and (max-width:1200px) {
     .maintable{

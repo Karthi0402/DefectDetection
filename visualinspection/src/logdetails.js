@@ -3,11 +3,16 @@ import './CSS/log.css';
 import {FaCaretSquareRight,FaFile} from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import ViewVideo from './viewvideo';
+import ViewLog from './logview';
+import './CSS/viewlog.css';
 const Logdetails = ({closeDetails}) => {
   const [openVideo,setOpenVideo] = useState(false);
+  const [openLog,setOpenLog] = useState(false);
   const handleIcon=()=>{
-    setOpenVideo(true);
-    
+    setOpenVideo(true);  
+  }
+  const handleFile=()=>{
+    setOpenLog(true);
   }
   return (
     <div>
@@ -28,8 +33,9 @@ const Logdetails = ({closeDetails}) => {
               <tbody>
               <tr>
                 <td>1</td>
-                <td><IconContext.Provider value={{ className: "Icon", size: "2em"}}><FaCaretSquareRight onClick={handleIcon}/></IconContext.Provider></td>
-                <td><FaFile/></td>
+                <td><IconContext.Provider value={{ className: "iconn", size: "2em"}}><FaCaretSquareRight onClick={handleIcon}/></IconContext.Provider></td>
+                <td><IconContext.Provider value={{className:"bicon", size: "1.5em"}}><FaFile onClick={handleFile}/></IconContext.Provider></td>
+              
               </tr>
               <tr>
                 <td>2</td>
@@ -41,7 +47,8 @@ const Logdetails = ({closeDetails}) => {
           </div>
         </div>
       </div>
-    </div>
+      {openLog && <div className='viewlog-popup'><ViewLog closeLog={setOpenLog}/></div>}
+      </div>
   )
 }
 
