@@ -36,7 +36,7 @@
     width: 300px;
     border: solid 1px white;
     border-radius: 5px;   
-    margin: 10em 20em 15em 30em;
+    margin: 10em 20em 15em 40em;
     padding: 6em;
     border: solid 1px white;
     background-color: lightgray;
@@ -80,7 +80,7 @@
       background-color: lightgray;
     }
   } */
-  @media screen and (max-width:1320) {
+  /* @media screen and (max-width:1320) {
     .container{
       border: solid 1px white;
       border-radius: 5px;   
@@ -90,3 +90,4 @@
       background-color: blue;
     }
   }
+   */
