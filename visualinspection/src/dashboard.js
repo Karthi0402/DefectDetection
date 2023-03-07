@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from './Img/logo.jpeg';
 import './CSS/dash.css';
 import { AiOutlineUser } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
-import Logdetails from './logdetails';
 import Webcam from 'react-webcam';
+import { Link } from 'react-router-dom';
 const Dashboard = () => {
-    const [openDetails,setOpenDetails] = useState(false);
     return (
         <div>
             <div className='NavBar'>
@@ -21,14 +20,10 @@ const Dashboard = () => {
                     <thead>
                         <tr>
                             <td><h3>Visual Inspection</h3></td>
-                            <td><button type='submit' onClick={()=>{
-                                setOpenDetails(true);
-                            }}>Log Details</button>
-                            </td>
+                            <td><Link to='/logdetails'><button type='submit'>Log Details</button></Link></td>
                         </tr>
                     </thead>
                 </table>
-                {openDetails && <div className='pop-up-container'><Logdetails closeDetails={setOpenDetails}/></div>}
             </div>
             <div>
             <div className='GRID'>

@@ -1,21 +1,4 @@
-.log-popup{
-    height: 100vh;
-    background-color: white;
-    width: 94vw;
-    border-radius: 10px;
-}
-.log-popup-header{
+.justify{
     display: flex;
-    background-color: chocolate;
-    justify-content: space-between;
-    padding: 0 30px 0 15px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-.log-popup-header h2{
-    color: white;
-}
-.log-popup-header h3{
-    color: white;
-    cursor: pointer;
+    justify-content: space-evenly;
 }

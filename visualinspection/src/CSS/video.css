@@ -1,23 +1,17 @@
-.video-popup{
-    height: 100vh;
-    background-color: white;
-    width: 94vw;
-    border-radius: 10px;    
-}
-.video-popup-header{
-    display: flex;
+.header{
     background-color: chocolate;
+    width: 95%;
+    height: 9vh;
+    margin: 1em 0 2em 3em;
     justify-content: space-between;
-    padding: 0 30px 0 15px;
-    border: 1px solid white;
+    display:flex;
+    border: 1px solid chocolate;
     border-radius: 10px;
 }
-.video-popup-header h2{
+.header h2{
     color: white;
+    margin:1em;
 }
-.video-popup-header h3{
-    color: white;
-    cursor: pointer;
+.header button{
+    margin: 1.5em;
 }
-
-/*  */

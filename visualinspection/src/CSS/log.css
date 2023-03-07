@@ -4,24 +4,37 @@
     border: 1px solid chocolate;
     width: 94vw;
     border-radius: 10px;
-    margin-top: 6em;
+    margin-top: 3em;
     margin-left: 3em;
+}
+.backb{
+    background-color: chocolate;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 3em;
+    width: 5em;
+    margin:2em 1em;
+    text-align: center;
+}
+.backb:hover{
+    background-color: white;
+    color: chocolate;
+    border: 1px solid black;
+    cursor: pointer;
 }
 .popup-header{
     display: flex;
     background-color: chocolate;
-    justify-content: space-between;
     padding: 0 30px 0 15px;
     border: 1px solid white;
     border-radius: 10px;
+    justify-content: space-between;
     /* border-bottom: 2px solid white; */
 }
 .popup-header h2{
+    margin: 1em 0 0 1em;
     color: white;
-}
-.popup-header h3{
-    color: white;
-    cursor: pointer;
 }
 .maintable{
     width: 70vw;
@@ -35,26 +48,13 @@ tbody tr{
 }
 .iconn{
     cursor: pointer;
+    color: darkgray;
 }
 .bicon{
-    
+    color: darkgray;
     cursor:pointer ;
 }
-.video-popup{
-    position: fixed;
-    overflow-y: scroll;
-    overflow: hidden;
-    max-height: 100%;
-    top: 8em;
-}
-.viewlog-popup{
-    position:fixed;
-    overflow-y: scroll;
-    overflow: hidden;
-    max-height: 100%;
-    top: 8em;
-    margin-left: 3em;
-}
+
 @media screen and (max-width:1200px) {
     .maintable{
         margin: 2em 4em 2em 10em;
