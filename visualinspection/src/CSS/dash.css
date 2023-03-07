@@ -54,7 +54,7 @@ tr button:hover{
 .GRID{
     margin:2em 3em 2em 3em;
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     background-color: chocolate;
