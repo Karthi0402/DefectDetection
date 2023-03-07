@@ -9,7 +9,7 @@ const Logdetails = () => {
   return (
     <div>
       <div className='NavBar'>
-        <img className='PHOTO' src={logo} alt="Ari-Logo" />
+      <Link to='/dashboard'><img className='PHOTO' src={logo} alt="Ari-Logo" /></Link>
         <IconContext.Provider value={{ className: "Icon1", size: "2em" }}>
           <AiOutlineUser />
         </IconContext.Provider>

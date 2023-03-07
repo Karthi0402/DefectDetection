@@ -25,7 +25,7 @@ const Signin = () => {
     return (
         <div className='main-container'>
             <div className='NavBar'>
-                <img className='PHOTO' src={logo} alt="Ari-Logo" />
+               <img className='PHOTO' src={logo} alt="Ari-Logo" />
             </div>
             <div className='container'>
                 <form onSubmit={handleSubmit}>
