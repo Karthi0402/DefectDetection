@@ -3,22 +3,22 @@ import './carousel.css';
 import { images } from '../Helpers/cimage';
 import { ArrowBackIos } from '@mui/icons-material';
 import { ArrowForwardIos } from '@mui/icons-material';
-const Carousel = () => {
-    const [cimage, setCimage] = useState(2)
+const Carousel1 = () => {
+    const [cimage1, setCimage1] = useState(0)
     return (
         <div className='carousel'>
             <div className='carouselinner'
-                style={{ backgroundImage: `url(${images[cimage].img})` }}
+                style={{ backgroundImage: `url(${images[cimage1].img})` }}
             >
                 <div className='left' onClick={() => {
-                    cimage > 0 && setCimage(cimage - 1);
+                    cimage1 > 0 && setCimage1(cimage1 - 1);
                 }}
                 ><ArrowBackIos /></div>
                 <div className='center'>
-                    <h1>{images[cimage].title}</h1>
+                    <h1>{images[cimage1].title}</h1>
                 </div>
                 <div className='right' onClick={() => {
-                    cimage < images.length - 1 && setCimage(cimage + 1);
+                    cimage1 < images.length - 1 && setCimage1(cimage1 + 1);
                 }}
                 ><ArrowForwardIos /><n /></div>
             </div>
@@ -28,4 +28,4 @@ const Carousel = () => {
     )
 }
 
-export default Carousel
+export default Carousel1
