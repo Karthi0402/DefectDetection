@@ -70,24 +70,11 @@
   a{
     text-decoration: none;
   }
-  /* @media screen and (max-width:1200px) {
+
+  @media screen and (max-width:1367px) {
     .container{
-      border: solid 1px white;
-      border-radius: 5px;   
-      margin: 10em 20em 15em 24em;
-      padding: 6em;
-      border: solid 1px white;
-      background-color: lightgray;
-    }
-  } */
-  /* @media screen and (max-width:1320) {
-    .container{
-      border: solid 1px white;
-      border-radius: 5px;   
-      margin-top: 1em;
-      padding: 6em;
-      border: solid 1px white;
-      background-color: blue;
+      margin-left: 30em;
+    
     }
   }
-   */
+  
