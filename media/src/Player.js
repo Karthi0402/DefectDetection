@@ -9,8 +9,8 @@ const Player = () => {
     <div> 
         <File/>
         <br/>
-        {/* <img src={music} style={{}}/> */}
-        <center><div style={{width:"20%",height:"250px",backgroundColor:"black",backgroundImage:`url`}}>
+        <center><div style={{width:"20%",height:"250px",backgroundColor:"black"}}>
+        <div style={{height:"100%",width:"100%",backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover",display:"flex",backgroundImage:`url(${music})`}}></div>
         </div></center>
         <br/>
         <ReactAudioPlayer 
