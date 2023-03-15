@@ -3,7 +3,7 @@ import { file1 } from './play'
 const Files = () => {
   return (
     <div>
-      <h1>Upload a File</h1>
+      <h1 style={{fontFamily:"times",color:"green"}}>Select a song</h1>
       {file1}
     </div>
   )

@@ -7,6 +7,8 @@ const Player = () => {
   return (
     <div> 
         <File/>
+        <br/>
+        
         <ReactAudioPlayer 
         src={pawan}
         autoPlay
