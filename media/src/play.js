@@ -1,1 +1,0 @@
-export const file1 = <input type="file" style={{fontFamily:"times",color:"green"}}/>
