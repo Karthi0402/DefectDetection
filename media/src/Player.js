@@ -10,7 +10,7 @@ const Player = () => {
     <div> 
         <div>
       <h1 style={{fontFamily:"times",color:"white"}}>Select a song</h1>
-      <input type="file" value={audio} onChange={e=>setAudio(e.target.value)} onClick={handleFile} style={{fontFamily:"times",color:"white"}}/>
+      <input type="file" src='http://127.0.0.1:8887/' value={audio} onChange={e=>setAudio(e.target.value)} onClick={handleFile} style={{fontFamily:"times",color:"white"}}/>
     </div>
         <br/>
         <center><div style={{width:"20%",height:"250px",backgroundColor:"black"}}>
