@@ -12,7 +12,10 @@ const Player = () => {
   const handleSubmit=(e)=>{
     const formData = new FormData()
     formData.append("audio",audio)
-    axios.post('http://localhost:3000/upload',formData).then((res)=>{
+    const config = {
+      headers:{'content-type':"multipart/formData"}
+    }
+    axios.post('http://localhost:3001/upload',formData,config).then((res)=>{
       setPlay(res)
       console.log(play)
     })
